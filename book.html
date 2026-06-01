@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книга знаний — Global Standards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-300 min-h-screen flex flex-col">
+
+    <!-- ========== ШАПКА ========== -->
+    <header class="bg-slate-950 border-b border-slate-900 py-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 text-white font-black text-lg">
+                <i class="fa-solid fa-newspaper text-amber-500"></i>
+                <span>Global Standards</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm">
+                <a href="index.html" class="text-slate-400 hover:text-white transition">Главная</a>
+                <a href="book.html" class="text-white">Книга знаний</a>
+                <a href="newspaper.html" class="text-slate-400 hover:text-white transition">Печатный вестник</a>
+                <a href="webinar.html" class="text-slate-400 hover:text-white transition">Семинары</a>
+            </nav>
+            <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden text-white text-xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden px-4 pt-4 pb-2 space-y-2 text-sm border-t border-slate-900 mt-4">
+            <a href="index.html" class="block text-slate-400 hover:text-white py-1">Главная</a>
+            <a href="book.html" class="block text-white py-1">Книга знаний</a>
+            <a href="newspaper.html" class="block text-slate-400 hover:text-white py-1">Печатный вестник</a>
+            <a href="webinar.html" class="block text-slate-400 hover:text-white py-1">Семинары</a>
+        </div>
+    </header>
+
+    <!-- ========== КОНТЕНТ ========== -->
+    <main class="flex-grow">
+
+        <!-- ===== Главный баннер ===== -->
+        <section class="py-16 md:py-24">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-amber-600/10 border border-amber-600/30 rounded-2xl mb-6">
+                    <i class="fa-solid fa-book text-amber-500 text-3xl"></i>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
+                    Финансовая архитектура проектов
+                </h1>
+                <p class="text-slate-400 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+                    Книга основана на цифрах, а&nbsp;не&nbsp;на сухой теории: два российских кейса по&nbsp;внедрению финансовой архитектуры в&nbsp;микробизнесе. Прочитав произведение, вы&nbsp;сможете понять и&nbsp;адаптировать тренды под реалии нашей страны и&nbsp;не&nbsp;утонуть в&nbsp;информационном шуме.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== Автор ===== -->
+        <section class="pb-12">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="bg-gradient-to-r from-amber-600/10 to-transparent border border-amber-600/20 rounded-xl p-6 md:p-8 flex items-center space-x-5">
+                    <div class="flex-shrink-0 w-14 h-14 bg-amber-600/20 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-pen-fancy text-amber-500 text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-amber-500 uppercase tracking-widest font-bold mb-1">Автор книги</p>
+                        <p class="text-white text-xl font-bold">Виктория Перчемли</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Блоки содержания ===== -->
+        <section class="pb-16">
+            <div class="max-w-4xl mx-auto px-4">
+
+                <h2 class="text-center text-2xl md:text-3xl font-black text-white mb-10">
+                    Содержание книги
+                </h2>
+
+                <div class="space-y-6">
+
+                    <!-- Блок 1 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 md:p-8 hover:border-amber-600/40 transition-colors duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600/10 border border-blue-600/30 rounded-xl flex items-center justify-center">
+                                <i class="fa-solid fa-scroll text-blue-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center space-x-2 mb-1">
+                                    <span class="text-xs font-bold text-blue-400 bg-blue-600/10 px-2 py-0.5 rounded-full">Блок 1</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-3">Манифест порядка</h3>
+                                <ul class="space-y-3 text-slate-400">
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fa-solid fa-chevron-right text-amber-500 mt-1 text-xs flex-shrink-0"></i>
+                                        <span><span class="text-white font-semibold">Добро пожаловать в 2026:</span> Почему старый мир рухнул</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fa-solid fa-chevron-right text-amber-500 mt-1 text-xs flex-shrink-0"></i>
+                                        <span><span class="text-white font-semibold">Генетика Гигантов:</span> Три принципа Global Standards</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fa-solid fa-chevron-right text-amber-500 mt-1 text-xs flex-shrink-0"></i>
+                                        <span><span class="text-white font-semibold">Как работать с системой:</span> Книга + Excel</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Блок 2 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 md:p-8 hover:border-amber-600/40 transition-colors duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-emerald-600/10 border border-emerald-600/30 rounded-xl flex items-center justify-center">
+                                <i class="fa-solid fa-globe text-emerald-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center space-x-2 mb-1">
+                                    <span class="text-xs font-bold text-emerald-400 bg-emerald-600/10 px-2 py-0.5 rounded-full">Блок 2</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-3">10 мировых стандартов управления</h3>
+                                <ul class="space-y-3 text-slate-400">
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fa-solid fa-chevron-right text-amber-500 mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Принцип DRI</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fa-solid fa-chevron-right text-amber-500 mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Автономизация и архитектура лимитов</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fa-solid fa-chevron-right text-amber-500 mt-1 text-xs flex-shrink-0"></i>
+                                        <span>Радикальная прозрачность и GAP-анализ</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fa-solid fa-chevron-right text-amber-500 mt-1 text-xs flex-shrink-0"></i>
+                                        <span>И многое другое...</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Блок 3 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 md:p-8 hover:border-amber-600/40 transition-colors duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-amber-600/10 border border-amber-600/30 rounded-xl flex items-center justify-center">
+                                <i class="fa-solid fa-gears text-amber-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center space-x-2 mb-1">
+                                    <span class="text-xs font-bold text-amber-400 bg-amber-600/10 px-2 py-0.5 rounded-full">Блок 3</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-3">Практикум — интеграция с Excel</h3>
+                                <ul class="space-y-3 text-slate-400">
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fa-solid fa-chevron-right text-amber-500 mt-1 text-xs flex-shrink-0"></i>
+                                        <span><span class="text-white font-semibold">Анатомия «Пульт управления»:</span> 4 слоя вашего файла</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fa-solid fa-chevron-right text-amber-500 mt-1 text-xs flex-shrink-0"></i>
+                                        <span><span class="text-white font-semibold">Fast Track:</span> Чек-лист запуска системы за 48 часов</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fa-solid fa-chevron-right text-amber-500 mt-1 text-xs flex-shrink-0"></i>
+                                        <span><span class="text-white font-semibold">Anti-Patterns:</span> Почему системы ломаются (и как этого избежать)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Призыв к действию ===== -->
+        <section class="pb-20">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="bg-gradient-to-br from-amber-600/10 to-slate-900 border border-amber-600/20 rounded-2xl p-8 md:p-12 text-center">
+                    <h2 class="text-2xl md:text-3xl font-black text-white mb-4">Готовы начать?</h2>
+                    <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+                        Получите книгу и начните внедрять финансовую архитектуру в свой проект уже сегодня.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="index.html" class="inline-flex items-center justify-center bg-amber-600 text-slate-950 font-bold px-8 py-3 rounded-lg hover:bg-amber-500 transition">
+                            <i class="fa-solid fa-arrow-left mr-2"></i>На главную
+                        </a>
+                        <a href="index.html#book" class="inline-flex items-center justify-center bg-slate-800 text-white font-bold px-8 py-3 rounded-lg hover:bg-slate-700 transition border border-slate-700">
+                            <i class="fa-solid fa-cart-shopping mr-2"></i>Приобрести книгу
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== ФУТЕР ========== -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-3">
+                <div class="flex items-center space-x-2 text-white font-black text-lg">
+                    <i class="fa-solid fa-newspaper text-amber-500"></i>
+                    <span>Global Standards</span>
+                </div>
+                <p>Методология управления проектами для структур высокой важности.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Навигация</h4>
+                <ul class="space-y-2">
+                    <li><a href="book.html" class="hover:underline">Книга знаний</a></li>
+                    <li><a href="newspaper.html" class="hover:underline">Печатный вестник</a></li>
+                    <li><a href="webinar.html" class="hover:underline">Семинары и вебинары</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Помощь</h4>
+                <ul class="space-y-2">
+                    <li><a href="oferta.html" class="hover:underline">Договор Оферты</a></li>
+                    <li><a href="privacy.html" class="hover:underline">Политика безопасности</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Подписка</h4>
+                <p class="mb-4">Будьте в курсе изменений ГОСТ Р управления проектами.</p>
+                <div class="flex">
+                    <input type="email" placeholder="E-mail" class="bg-slate-900 border border-slate-800 rounded-l-lg px-3 text-xs w-full focus:outline-none">
+                    <button class="bg-amber-600 text-slate-950 font-bold px-3 py-2 rounded-r-lg text-xs">ОК</button>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-slate-900 mt-10 pt-6 text-center text-xs text-slate-600">
+            &copy; 2026 Global Standards | Виктория Перчемли. Все права защищены.
+        </div>
+    </footer>
+
+</body>
+</html>
