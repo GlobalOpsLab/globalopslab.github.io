@@ -21,14 +21,11 @@
 </head>
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
 
-    <!-- Toast уведомления -->
     <div id="toastContainer" class="fixed top-24 right-4 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
-<!-- Навигация -->
 <header class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md text-white border-b border-slate-800 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         
-        <!-- Логотип -->
         <a href="#" class="flex items-center space-x-3 group">
             <div class="bg-amber-600 p-2 rounded-lg text-slate-900 font-bold text-xl group-hover:bg-amber-500 transition-colors">
                 <i class="fa-solid fa-newspaper"></i>
@@ -39,7 +36,6 @@
             </div>
         </a>
 
-        <!-- Главное меню -->
         <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold uppercase tracking-wide lg:ml-10 xl:ml-14">
             <a href="#about" class="hover:text-amber-500 transition-colors">Об авторе</a>
             <a href="#book" class="hover:text-amber-500 transition-colors">Книга</a>
@@ -54,10 +50,8 @@
             </a>
         </nav>
 
-<!-- Правая часть -->
 <div class="hidden md:flex items-center gap-3 lg:ml-10 xl:ml-14">
 
-    <!-- Telegram -->
     <a href="https://t.me/pro_management_1"
        target="_blank"
        rel="noopener noreferrer"
@@ -66,7 +60,6 @@
         <span class="hidden xl:inline text-sm font-semibold">Telegram</span>
     </a>
 
-    <!-- Дзен -->
     <a href="https://dzen.ru/globalopslab"
        target="_blank"
        rel="noopener noreferrer"
@@ -75,7 +68,6 @@
         <span class="hidden xl:inline text-sm font-semibold">Дзен</span>
     </a>
 
-    <!-- Instagram -->
     <a href="https://www.instagram.com/global_ops_lab?igsh=MTIzdDNlem1vcWR3dw%3D%3D&utm_source=qr"
        target="_blank"
        rel="noopener noreferrer"
@@ -84,26 +76,22 @@
         <span class="hidden xl:inline text-sm font-semibold">Instagram</span>
     </a>
 
-    <!-- Телефон -->
     <a href="tel:+79852424932"
        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 border border-slate-700 hover:border-amber-500/50 hover:text-white transition whitespace-nowrap">
         <i class="fa-solid fa-phone text-amber-500"></i>
         <span class="hidden xl:inline text-sm font-semibold">+7 985 242-49-32</span>
     </a>
 
-    <!-- Почта -->
     <a href="mailto:perchemli.vika@bk.ru"
        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 border border-slate-700 hover:border-emerald-400/60 hover:text-white transition whitespace-nowrap">
         <i class="fa-solid fa-envelope text-emerald-400"></i>
         <span class="hidden xl:inline text-sm font-semibold">perchemli.vika@bk.ru</span>
     </a>
 </div>
-        <!-- Бургер -->
         <button onclick="toggleMobileMenu()" class="lg:hidden text-slate-300 focus:outline-none">
             <i id="menuIcon" class="fa-solid fa-bars text-2xl"></i>
         </button>
 
-    <!-- Мобильное меню -->
     <div id="mobileMenu" class="hidden lg:hidden bg-slate-850 border-t border-slate-800 px-4 pt-2 pb-6 space-y-3 font-semibold text-center text-slate-200">
         <a href="#about" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-800 hover:text-amber-500">Об авторе</a>
         <a href="#book" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-800 hover:text-amber-500">Книга</a>
@@ -111,7 +99,6 @@
         <a href="#tools" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-800 hover:text-amber-500">Инструменты</a>
         <a href="#webinar" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-800 hover:text-amber-500">Интенсив</a>
 
-        <!-- Контакты в мобильном меню -->
         <div class="pt-3 space-y-3">
             <a href="https://t.me/pro_management_1"
                target="_blank"
@@ -151,7 +138,6 @@
     </div>
 </header>
 
-    <!-- HERO -->
     <section class="relative bg-slate-900 text-white pt-20 pb-28 lg:pt-32 lg:pb-40 overflow-hidden">
         <div class="absolute inset-0 opacity-10">
             <div class="absolute top-10 left-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
@@ -206,7 +192,6 @@
         </div>
     </section>
 
-    <!-- ИНТЕРАКТИВНЫЙ КВИЗ -->
     <section id="tools" class="py-20 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -221,12 +206,10 @@
         </div>
     </section>
 
-<!-- КНИГА -->
 <section id="book" class="py-20 bg-white border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
-            <!-- ЛЕВАЯ КОЛОНКА — КНИГА -->
             <div class="space-y-6">
                 <span class="text-slate-500 font-bold uppercase tracking-wider text-sm flex items-center gap-2">
                     <i class="fa-solid fa-book text-amber-600"></i> Основной продукт
@@ -247,7 +230,6 @@
                 </div>
             </div>
 
-            <!-- ПРАВАЯ КОЛОНКА — КАЛЬКУЛЯТОР -->
             <div class="bg-slate-50 border border-slate-200 p-8 rounded-2xl shadow-lg">
                 <h3 class="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2">
                     <i class="fa-solid fa-calculator text-amber-600"></i> Калькулятор потерь
@@ -297,7 +279,6 @@
     </div>
 </section>
 
-<!-- ГАЗЕТА (ЖУРНАЛ) -->
 <section id="newspaper" class="py-20 bg-slate-900 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -311,7 +292,6 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="newspaperGrid">
 
-            <!-- ВЫПУСК 1 — АКТУАЛЬНЫЙ -->
             <button type="button"
                     onclick="toggleModal('newspaperModal')"
                     class="text-left bg-slate-800 border border-slate-700 rounded-xl overflow-hidden group hover:border-amber-500/50 transition cursor-pointer">
@@ -340,33 +320,26 @@
                 </div>
             </button>
 
-<!-- ВЫПУСК 2 — СКОРО -->
 <div class="text-left bg-slate-800/50 border border-slate-700/50 rounded-xl overflow-hidden relative cursor-not-allowed">
 
     <div class="aspect-[16/10] bg-slate-950 relative overflow-hidden border-b border-slate-700/50">
 
-        <!-- Размытая заглушка -->
         <div class="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950"></div>
 
-        <!-- Декоративная иконка газеты -->
         <div class="absolute inset-0 flex items-center justify-center opacity-10">
             <i class="fa-solid fa-newspaper text-9xl"></i>
         </div>
 
-        <!-- Затемнение -->
         <div class="absolute inset-0 bg-slate-950/40"></div>
 
-        <!-- Бейдж "Скоро" -->
         <span class="absolute top-3 right-3 bg-amber-500/90 text-slate-950 text-xs font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
             Скоро
         </span>
 
-        <!-- Дата -->
         <span class="absolute top-3 left-3 bg-slate-900/90 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md backdrop-blur">
             Июнь 2026
         </span>
 
-        <!-- БОЛЬШОЙ замок по центру -->
         <div class="absolute inset-0 flex items-center justify-center">
             <div class="w-28 h-28 bg-slate-900/80 backdrop-blur rounded-full flex items-center justify-center border-2 border-slate-700 shadow-2xl">
                 <i class="fa-solid fa-lock text-slate-300 text-5xl"></i>
@@ -381,7 +354,6 @@
     </div>
 </div>
 
-<!-- ВЫПУСК 3 — СКОРО -->
 <div class="text-left bg-slate-800/50 border border-slate-700/50 rounded-xl overflow-hidden relative cursor-not-allowed">
 
     <div class="aspect-[16/10] bg-slate-950 relative overflow-hidden border-b border-slate-700/50">
@@ -402,7 +374,6 @@
             Июль 2026
         </span>
 
-        <!-- БОЛЬШОЙ замок по центру -->
         <div class="absolute inset-0 flex items-center justify-center">
             <div class="w-28 h-28 bg-slate-900/80 backdrop-blur rounded-full flex items-center justify-center border-2 border-slate-700 shadow-2xl">
                 <i class="fa-solid fa-lock text-slate-300 text-5xl"></i>
@@ -421,22 +392,17 @@
     </div>
 </section>
 
-<!-- ВЕБИНАР / ИНТЕНСИВ -->
 <section id="webinar" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <!-- Внешний контейнер с фоном и закруглением -->
         <div class="bg-slate-900 text-white rounded-3xl shadow-2xl relative border border-slate-800">
 
-            <!-- Декоративный фон (изолирован внутри своего блока) -->
             <div class="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none">
                 <div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500 to-transparent"></div>
             </div>
 
-            <!-- Контент -->
             <div class="grid grid-cols-1 lg:grid-cols-2 p-8 md:p-14 relative z-10 items-start gap-12">
 
-                <!-- ЛЕВАЯ КОЛОНКА -->
                 <div class="space-y-6">
                     <h2 class="text-3xl md:text-4xl font-extrabold serif leading-tight">
                         Интенсив «Excel-архитектор»
@@ -483,19 +449,15 @@
                     </p>
                 </div>
 
-<!-- ПРАВАЯ КОЛОНКА — КАРТИНКА + ФОРМА ПОВЕРХ -->
 <div class="lg:sticky lg:top-24">
     <div class="relative rounded-2xl overflow-hidden shadow-2xl">
 
-        <!-- Большая картинка фоном -->
         <img src="images/webinar-bg.jpg"
              alt="Excel-архитектор"
              class="w-full h-auto block">
 
-        <!-- Лёгкое затемнение для красоты -->
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/30"></div>
 
-        <!-- Форма поверх картинки -->
         <div class="absolute inset-0 flex items-center justify-center p-4 md:p-6">
             <div class="bg-slate-900/95 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-slate-700 shadow-2xl w-full max-w-sm">
                 <h3 class="text-xl font-bold mb-2 text-white">Забронировать участие</h3>
@@ -520,12 +482,10 @@
 </div>
 </section>
 
-    <!-- АВТОР -->
 <section id="about" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-            <!-- Фото слева -->
             <div class="lg:col-span-5 flex justify-center lg:justify-end">
                 <div class="relative group">
                     <div class="absolute -inset-4 bg-gradient-to-tr from-amber-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition duration-500"></div>
@@ -537,7 +497,6 @@
                 </div>
             </div>
 
-            <!-- Текст справа -->
             <div class="lg:col-span-7 space-y-6">
                 <span class="text-amber-600 font-bold uppercase tracking-wider text-sm flex items-center gap-2">
                     <i class="fa-solid fa-pen-nib"></i> Создатель методологии
@@ -547,7 +506,6 @@
                     "Моя главная миссия — убрать пустые отчеты ради отчетов. Финансовая архитектура — это каркас вашего роста."
                 </p>
                 
-                <!-- Описание с маркерами -->
                 <div class="space-y-3 text-slate-700 font-medium">
                     <div class="flex items-start gap-3">
                         <i class="fa-solid fa-check-circle text-emerald-500 mt-1"></i>
@@ -576,7 +534,6 @@
     </div>
 </section>
 
-<!-- ЦЕНЫ -->
 <section id="pricing" class="py-20 bg-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-12">
@@ -586,7 +543,6 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
 
-            <!-- Книга (Электронная) -->
             <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
                 <div class="p-6 border-b border-slate-100">
                     <h3 class="text-xl font-extrabold text-slate-800">Книга (Электронная)</h3>
@@ -618,7 +574,6 @@
                 </div>
             </div>
 
-            <!-- Лучший вариант — Книга + Excel -->
             <div class="group bg-slate-900 text-white rounded-2xl border-2 border-amber-500 overflow-hidden shadow-2xl relative flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(245,158,11,0.25)] transition-all duration-300">
                 <div class="absolute top-0 right-0 bg-amber-500 text-slate-950 text-2xs font-extrabold px-3 py-1 uppercase rounded-bl-lg z-10">
                     Рекомендуем
@@ -655,7 +610,6 @@
                 </div>
             </div>
 
-            <!-- Журнал -->
             <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
                 <div class="p-6 border-b border-slate-100">
                     <h3 class="text-xl font-extrabold text-slate-800">Журнал «GLOBAL OPS LAB»</h3>
@@ -767,11 +721,9 @@
     </div>
 </footer>
       
-        <!-- МОДАЛЬНОЕ ОКНО — Журнал с картинками -->
     <div id="newspaperModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
         <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl relative overflow-hidden">
             
-            <!-- Шапка окна -->
             <div class="p-4 border-b border-slate-200 flex items-center justify-between bg-slate-50">
                 <div>
                     <h3 class="font-black text-slate-800">Демо-выпуск журнала «Global Ops Lab»</h3>
@@ -780,25 +732,20 @@
                 <button onclick="toggleModal('newspaperModal')" class="text-slate-500 hover:text-slate-800 font-bold text-2xl p-1">&times;</button>
             </div>
 
-            <!-- Галерея картинок -->
             <div class="p-4 md:p-6 overflow-y-auto flex-1 bg-slate-100/50 space-y-6">
-                <!-- Страница 1 -->
                 <img src="images/newspaper-1.png" 
                      alt="Страница 1 журнала" 
                      class="w-full rounded-lg shadow-md border border-slate-200 mx-auto">
                 
-                <!-- Страница 2 -->
                 <img src="images/newspaper-2.png" 
                      alt="Страница 2 журнала" 
                      class="w-full rounded-lg shadow-md border border-slate-200 mx-auto">
                 
-                <!-- Страница 3 -->
                 <img src="images/newspaper-3.png" 
                      alt="Страница 3 журнала" 
                      class="w-full rounded-lg shadow-md border border-slate-200 mx-auto">
             </div>
 
-            <!-- Кнопка внизу -->
             <div class="p-4 border-t border-slate-200 bg-slate-50 flex justify-center">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScmTH9mRUGsS-_hKjvOkwT6D4rbgTxNMyxx6DCX4YeSZTADXw/viewform"
                    target="_blank"
